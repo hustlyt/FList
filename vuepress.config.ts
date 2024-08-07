@@ -31,7 +31,7 @@ export default defineUserConfig({
   theme: FileList([
     {
       // 挂载路径
-      mountPath: "/clash-verge-rev",
+      mountPath: "/梯子/clash-verge-rev",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
         // 仓库所有者的用户名
@@ -41,7 +41,13 @@ export default defineUserConfig({
       }),
       downProxy: cloudflarePagesDownProxy(),
     },
-
+    {
+      mountPath:"/梯子",
+      analysis:fileUrlTreeAnalysis({
+        "/Clash-Android.apk":"https://www.cordcloud.biz/clients/Clash-Android.apk",
+        "/Clash-Windows.exe":"https://www.cordcloud.biz/clients/Clash-Windows.exe"
+      }),
+    }
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
