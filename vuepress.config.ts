@@ -33,7 +33,7 @@ export default defineUserConfig({
   theme: FileList([
     {
       // 挂载路径
-      mountPath: "/tools/clash-verge-rev",
+      mountPath: "/tools/software/clash-pc/clash-verge-rev",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
         // 仓库所有者的用户名
@@ -44,11 +44,16 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath:"/tools",
-      analysis:fileUrlTreeAnalysis({
-        "/Clash-Android.apk":"https://www.cordcloud.biz/clients/Clash-Android.apk",
-        "/Clash-Windows.exe":"https://www.cordcloud.biz/clients/Clash-Windows.exe"
+      // 挂载路径
+      mountPath: "/tools/software/clash-meta-for-android",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        // 仓库所有者的用户名
+        user: "MetaCubeX",
+        // 仓库所有者的仓库名
+        repository: "ClashMetaForAndroid"
       }),
+      downProxy: cloudflarePagesDownProxy(),
     }
     // ... 可以配置多个挂载路径和仓库，以此类推
   ]),  
