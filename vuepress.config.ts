@@ -32,61 +32,49 @@ export default defineUserConfig({
   // 主题配置 FileList 是 vuepress 的一个主题，文件展示的功能全部由这个主题提供。
   theme: FileList([
     {
-      // 挂载路径
       mountPath: "/tools/software/clash/clash-verge-rev",
-      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "clash-verge-rev",
-        // 仓库所有者的仓库名
         repository: "clash-verge-rev"
       }),
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      // 挂载路径
       mountPath: "/tools/software/clash/FlClash",
-      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "chen08209",
-        // 仓库所有者的仓库名
         repository: "FlClash"
       }),
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      // 挂载路径
       mountPath: "/tools/software/clash/clash-meta-for-android",
-      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "MetaCubeX",
-        // 仓库所有者的仓库名
         repository: "ClashMetaForAndroid"
       }),
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      // 挂载路径
       mountPath: "/tools/software/clash/mihomo-party",
-      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "mihomo-party-org",
-        // 仓库所有者的仓库名
         repository: "clash-party"
       }),
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      // 挂载路径
-      mountPath: "/tools/software/karing",
-      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      mountPath: "/tools/software/clash/clashmi",
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "KaringX",
-        // 仓库所有者的仓库名
+        repository: "clashmi"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/tools/software/karing",
+      analysis: githubReleasesFilesAnalysis({
+        user: "KaringX",
         repository: "karing"
       }),
       downProxy: cloudflarePagesDownProxy(),
