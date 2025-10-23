@@ -56,10 +56,18 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/software/clash/mihomo-party",
+      mountPath: "/tools/software/clash/clash-party",
       analysis: githubReleasesFilesAnalysis({
         user: "mihomo-party-org",
         repository: "clash-party"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/tools/software/clash/sparkle",
+      analysis: githubReleasesFilesAnalysis({
+        user: "xishang0128",
+        repository: "sparkle"
       }),
       downProxy: cloudflarePagesDownProxy(),
     },
