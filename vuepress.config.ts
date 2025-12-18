@@ -86,6 +86,85 @@ export default defineUserConfig({
         repository: "karing"
       }),
       downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/tools/http-server/binserve",
+      analysis: githubReleasesFilesAnalysis({
+        user: "mufeedvh",
+        repository: "binserve"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/tools/http-server/go-http-file-server",
+      analysis: githubReleasesFilesAnalysis({
+        user: "mjpclab",
+        repository: "go-http-file-server"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/tools/http-server/serve",
+      analysis: githubReleasesFilesAnalysis({
+        user: "syntaqx",
+        repository: "serve"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/tools/http-server/nimhttpd",
+      analysis: githubReleasesFilesAnalysis({
+        user: "h3rald",
+        repository: "nimhttpd"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/tools/http-server/dufs",
+      analysis: githubReleasesFilesAnalysis({
+        user: "sigoden",
+        repository: "dufs"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/tools/http-server/dufs-material-assets",
+      analysis: githubReleasesFilesAnalysis({
+        user: "TransparentLC",
+        repository: "dufs-material-assets"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/tools/http-server/sharing-GUI",
+      analysis: githubReleasesFilesAnalysis({
+        user: "imyuanx",
+        repository: "sharing-GUI"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/tools/http-server/croc",
+      analysis: githubReleasesFilesAnalysis({
+        user: "schollz",
+        repository: "croc"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/tool/http-server/chfs",
+      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
+      analysis: fileUrlTreeAnalysis({
+        "/gui-chfs-windows.zip": "http://iscute.cn/tar/chfs/3.1/gui-chfs-windows.zip",
+        "/chfs-windows-x64-3.1.zip": "http://iscute.cn/tar/chfs/3.1/chfs-windows-x64-3.1.zip"
+      })
+    },
+    {
+      mountPath: "/tool/http-server/webd",
+      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
+      analysis: fileUrlTreeAnalysis({
+        "/webd-20240711-win32.7z": "https://webd.cf/webd/webd_dl/20240223/webd-20240711-win32.7z"
+      })
     }
     // ... 可以配置多个挂载路径和仓库，以此类推
   ]),  
