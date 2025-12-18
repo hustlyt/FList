@@ -155,9 +155,9 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "/tool/http-server/chfs/gui-chfs-windows.zip": "http://iscute.cn/tar/chfs/3.1/gui-chfs-windows.zip",
-        "/tool/http-server/chfs/chfs-windows-x64-3.1.zip": "http://iscute.cn/tar/chfs/3.1/chfs-windows-x64-3.1.zip",
-        "/tool/http-server/webd/webd-20240711-win32.7z": "https://webd.cf/webd/webd_dl/20240223/webd-20240711-win32.7z"
+        "/tools/http-server/chfs/gui-chfs-windows.zip": "http://iscute.cn/tar/chfs/3.1/gui-chfs-windows.zip",
+        "/tools/http-server/chfs/chfs-windows-x64-3.1.zip": "http://iscute.cn/tar/chfs/3.1/chfs-windows-x64-3.1.zip",
+        "/tools/http-server/webd/webd-20240711-win32.7z": "https://webd.cf/webd/webd_dl/20240223/webd-20240711-win32.7z"
       })
     }
     // ... 可以配置多个挂载路径和仓库，以此类推
