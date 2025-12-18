@@ -32,7 +32,7 @@ export default defineUserConfig({
   // 主题配置 FileList 是 vuepress 的一个主题，文件展示的功能全部由这个主题提供。
   theme: FileList([
     {
-      mountPath: "/tools/software/clash/clash-verge-rev",
+      mountPath: "/tools/proxy/clash/clash-verge-rev",
       analysis: githubReleasesFilesAnalysis({
         user: "clash-verge-rev",
         repository: "clash-verge-rev"
@@ -40,7 +40,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/software/clash/FlClash",
+      mountPath: "/tools/proxy/clash/FlClash",
       analysis: githubReleasesFilesAnalysis({
         user: "chen08209",
         repository: "FlClash"
@@ -48,7 +48,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/software/clash/clash-meta-for-android",
+      mountPath: "/tools/proxy/clash/clash-meta-for-android",
       analysis: githubReleasesFilesAnalysis({
         user: "MetaCubeX",
         repository: "ClashMetaForAndroid"
@@ -56,7 +56,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/software/clash/clash-party",
+      mountPath: "/tools/proxy/clash/clash-party",
       analysis: githubReleasesFilesAnalysis({
         user: "mihomo-party-org",
         repository: "clash-party"
@@ -64,7 +64,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/software/clash/sparkle",
+      mountPath: "/tools/proxy/clash/sparkle",
       analysis: githubReleasesFilesAnalysis({
         user: "xishang0128",
         repository: "sparkle"
@@ -72,7 +72,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/software/clash/clashmi",
+      mountPath: "/tools/proxy/clash/clashmi",
       analysis: githubReleasesFilesAnalysis({
         user: "KaringX",
         repository: "clashmi"
@@ -80,7 +80,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/software/karing",
+      mountPath: "/tools/proxy/karing",
       analysis: githubReleasesFilesAnalysis({
         user: "KaringX",
         repository: "karing"
@@ -152,18 +152,12 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tool/http-server/chfs",
+      mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "/gui-chfs-windows.zip": "http://iscute.cn/tar/chfs/3.1/gui-chfs-windows.zip",
-        "/chfs-windows-x64-3.1.zip": "http://iscute.cn/tar/chfs/3.1/chfs-windows-x64-3.1.zip"
-      })
-    },
-    {
-      mountPath: "/tool/http-server/webd",
-      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
-      analysis: fileUrlTreeAnalysis({
-        "/webd-20240711-win32.7z": "https://webd.cf/webd/webd_dl/20240223/webd-20240711-win32.7z"
+        "/tool/http-server/chfs/gui-chfs-windows.zip": "http://iscute.cn/tar/chfs/3.1/gui-chfs-windows.zip",
+        "/tool/http-server/chfs/chfs-windows-x64-3.1.zip": "http://iscute.cn/tar/chfs/3.1/chfs-windows-x64-3.1.zip",
+        "/tool/http-server/webd/webd-20240711-win32.7z": "https://webd.cf/webd/webd_dl/20240223/webd-20240711-win32.7z"
       })
     }
     // ... 可以配置多个挂载路径和仓库，以此类推
