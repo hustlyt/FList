@@ -168,8 +168,21 @@ export default defineUserConfig({
         "/software/http-server/webd/webd-20240711-win32.7z": "https://webd.cf/webd/webd_dl/20240223/webd-20240711-win32.7z",
         "/software/dbeaver/dbeaver-ce-latest-x86_64-setup.exe": "https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe",
         "/software/dbeaver/dbeaver-ce-latest-win32.win32.x86_64.zip": "https://dbeaver.io/files/dbeaver-ce-latest-win32.win32.x86_64.zip",
+        "/software/busybox/busybox-for-windows/busybox.exe": "https://frippery.org/files/busybox/busybox.exe",
+        "/software/busybox/busybox-for-windows/busybox64.exe": "https://frippery.org/files/busybox/busybox64.exe",
+        "/software/busybox/busybox-for-windows/busybox64u.exe": "https://frippery.org/files/busybox/busybox64u.exe",
+        "/software/busybox/busybox-for-windows/busybox64a.exe": "https://frippery.org/files/busybox/busybox64a.exe",
+        "/software/busybox/busybox/busybox": "https://busybox.net/downloads/binaries/1.35.0-x86_64-linux-musl/busybox",
         "/resources/dbeaver-driver-all.zip": "https://github.com/moshowgame/dbeaver-driver-all/archive/refs/heads/master.zip"
       })
+    },
+     {
+      mountPath: "/",
+      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
+      analysis: fileUrlTreeAnalysis({
+        "/software/busybox/busybox": "https://busybox.net/downloads/binaries/1.35.0-x86_64-linux-musl/busybox"
+      }),
+       downProxy: cloudflarePagesDownProxy(),
     }
     // ... 可以配置多个挂载路径和仓库，以此类推
   ]),  
