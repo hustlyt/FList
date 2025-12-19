@@ -32,7 +32,7 @@ export default defineUserConfig({
   // 主题配置 FileList 是 vuepress 的一个主题，文件展示的功能全部由这个主题提供。
   theme: FileList([
     {
-      mountPath: "/tools/proxy/clash/clash-verge-rev",
+      mountPath: "/software/proxy/clash/clash-verge-rev",
       analysis: githubReleasesFilesAnalysis({
         user: "clash-verge-rev",
         repository: "clash-verge-rev"
@@ -40,7 +40,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/proxy/clash/FlClash",
+      mountPath: "/software/proxy/clash/FlClash",
       analysis: githubReleasesFilesAnalysis({
         user: "chen08209",
         repository: "FlClash"
@@ -48,7 +48,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/proxy/clash/clash-meta-for-android",
+      mountPath: "/software/proxy/clash/clash-meta-for-android",
       analysis: githubReleasesFilesAnalysis({
         user: "MetaCubeX",
         repository: "ClashMetaForAndroid"
@@ -56,7 +56,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/proxy/clash/clash-party",
+      mountPath: "/software/proxy/clash/clash-party",
       analysis: githubReleasesFilesAnalysis({
         user: "mihomo-party-org",
         repository: "clash-party"
@@ -64,7 +64,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/proxy/clash/sparkle",
+      mountPath: "/software/proxy/clash/sparkle",
       analysis: githubReleasesFilesAnalysis({
         user: "xishang0128",
         repository: "sparkle"
@@ -72,7 +72,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/proxy/clash/clashmi",
+      mountPath: "/software/proxy/clash/clashmi",
       analysis: githubReleasesFilesAnalysis({
         user: "KaringX",
         repository: "clashmi"
@@ -80,7 +80,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/proxy/karing",
+      mountPath: "/software/proxy/karing",
       analysis: githubReleasesFilesAnalysis({
         user: "KaringX",
         repository: "karing"
@@ -88,7 +88,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/http-server/binserve",
+      mountPath: "/software/http-server/binserve",
       analysis: githubReleasesFilesAnalysis({
         user: "mufeedvh",
         repository: "binserve"
@@ -96,7 +96,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/http-server/go-http-file-server",
+      mountPath: "/software/http-server/go-http-file-server",
       analysis: githubReleasesFilesAnalysis({
         user: "mjpclab",
         repository: "go-http-file-server"
@@ -104,7 +104,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/http-server/serve",
+      mountPath: "/software/http-server/serve",
       analysis: githubReleasesFilesAnalysis({
         user: "syntaqx",
         repository: "serve"
@@ -112,7 +112,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/http-server/nimhttpd",
+      mountPath: "/software/http-server/nimhttpd",
       analysis: githubReleasesFilesAnalysis({
         user: "h3rald",
         repository: "nimhttpd"
@@ -120,7 +120,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/http-server/dufs",
+      mountPath: "/software/http-server/dufs",
       analysis: githubReleasesFilesAnalysis({
         user: "sigoden",
         repository: "dufs"
@@ -128,7 +128,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/http-server/dufs-material-assets",
+      mountPath: "/software/http-server/dufs-material-assets",
       analysis: githubReleasesFilesAnalysis({
         user: "TransparentLC",
         repository: "dufs-material-assets"
@@ -136,7 +136,15 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/http-server/sharing-GUI",
+      mountPath: "/software/http-server/dufs_theme_mango",
+      analysis: githubReleasesFilesAnalysis({
+        user: "uuzp",
+        repository: "dufs_theme_mango"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/software/http-server/sharing-GUI",
       analysis: githubReleasesFilesAnalysis({
         user: "imyuanx",
         repository: "sharing-GUI"
@@ -144,7 +152,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/tools/http-server/croc",
+      mountPath: "/software/http-server/croc",
       analysis: githubReleasesFilesAnalysis({
         user: "schollz",
         repository: "croc"
@@ -155,9 +163,12 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "/tools/http-server/chfs/gui-chfs-windows.zip": "http://iscute.cn/tar/chfs/3.1/gui-chfs-windows.zip",
-        "/tools/http-server/chfs/chfs-windows-x64-3.1.zip": "http://iscute.cn/tar/chfs/3.1/chfs-windows-x64-3.1.zip",
-        "/tools/http-server/webd/webd-20240711-win32.7z": "https://webd.cf/webd/webd_dl/20240223/webd-20240711-win32.7z"
+        "/software/http-server/chfs/gui-chfs-windows.zip": "http://iscute.cn/tar/chfs/3.1/gui-chfs-windows.zip",
+        "/software/http-server/chfs/chfs-windows-x64-3.1.zip": "http://iscute.cn/tar/chfs/3.1/chfs-windows-x64-3.1.zip",
+        "/software/http-server/webd/webd-20240711-win32.7z": "https://webd.cf/webd/webd_dl/20240223/webd-20240711-win32.7z",
+        "/software/dbeaver/dbeaver-ce-latest-x86_64-setup.exe": "https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe",
+        "/software/dbeaver/dbeaver-ce-latest-win32.win32.x86_64.zip": "https://dbeaver.io/files/dbeaver-ce-latest-win32.win32.x86_64.zip",
+        "/resources/dbeaver-driver-all.zip": "https://github.com/moshowgame/dbeaver-driver-all/archive/refs/heads/master.zip"
       })
     }
     // ... 可以配置多个挂载路径和仓库，以此类推
