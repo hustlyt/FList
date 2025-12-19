@@ -172,7 +172,6 @@ export default defineUserConfig({
         "/software/busybox/busybox-for-windows/busybox64.exe": "https://frippery.org/files/busybox/busybox64.exe",
         "/software/busybox/busybox-for-windows/busybox64u.exe": "https://frippery.org/files/busybox/busybox64u.exe",
         "/software/busybox/busybox-for-windows/busybox64a.exe": "https://frippery.org/files/busybox/busybox64a.exe",
-        "/software/busybox/busybox/busybox": "https://busybox.net/downloads/binaries/1.35.0-x86_64-linux-musl/busybox",
         "/resources/dbeaver-driver-all.zip": "https://github.com/moshowgame/dbeaver-driver-all/archive/refs/heads/master.zip"
       })
     },
@@ -180,7 +179,7 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "/software/busybox/busybox": "https://busybox.net/downloads/binaries/1.35.0-x86_64-linux-musl/busybox"
+        "/software/busybox/busybox": "https://github.com/hustlyt/common-tools/raw/refs/heads/main/busybox"
       }),
        downProxy: cloudflarePagesDownProxy(),
     }
