@@ -88,6 +88,14 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
+      mountPath: "/software/ssh连接工具/WindTerm",
+      analysis: githubReleasesFilesAnalysis({
+        user: "kingToolbox",
+        repository: "WindTerm"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+    {
       mountPath: "/software/http-server/binserve",
       analysis: githubReleasesFilesAnalysis({
         user: "mufeedvh",
@@ -179,7 +187,8 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "/software/busybox/busybox": "https://github.com/hustlyt/common-tools/raw/refs/heads/main/busybox"
+        "/software/busybox/busybox": "https://github.com/hustlyt/common-tools/raw/refs/heads/main/busybox",
+        "/software/busybox/busybox_HTTPD": "https://github.com/hustlyt/common-tools/raw/refs/heads/main/busybox_HTTPD"
       }),
        downProxy: cloudflarePagesDownProxy(),
     }
